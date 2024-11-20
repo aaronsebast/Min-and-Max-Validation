@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .input-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  input {
+    width: 100px;
+    text-align: center;
+  }
+  button {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Min VS Max Validation</h2>
+  <div class="input-group">
+    <input id="minValue" type="number" placeholder="Min">
+    <span>&lt;</span>
+    <input id="maxValue" type="number" placeholder="Max">
+  </div>
+  <button onclick="validate()">Validate</button>
+</div>
+
+<script>
+function validate() {
+  let min = parseFloat(document.getElementById("minValue").value);
+  let max = parseFloat(document.getElementById("maxValue").value);
+  alert(min < max ? "Valid" : "Invalid");
+}
+</script>
+
+</body>
+</html>

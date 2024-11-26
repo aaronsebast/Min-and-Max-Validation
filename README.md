@@ -1,4 +1,4 @@
-# Min VS Max Validation Program
+# Min vs Max Validation Program
 
 This is a beginner-friendly web application that validates whether a "min" value is less than a "max" value. 
 
